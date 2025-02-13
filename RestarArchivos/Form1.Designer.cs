@@ -34,6 +34,7 @@
             this.BtnSaveResult = new System.Windows.Forms.Button();
             this.lblArchivoOriginal = new System.Windows.Forms.Label();
             this.lblArchivoDescontar = new System.Windows.Forms.Label();
+            this.lblVersion = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // BtnArchivoOriginal
@@ -84,11 +85,22 @@
             this.lblArchivoDescontar.Text = "Archivo Descontar";
             this.lblArchivoDescontar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // lblVersion
+            // 
+            this.lblVersion.AutoSize = true;
+            this.lblVersion.Location = new System.Drawing.Point(597, 495);
+            this.lblVersion.Name = "lblVersion";
+            this.lblVersion.Size = new System.Drawing.Size(165, 25);
+            this.lblVersion.TabIndex = 5;
+            this.lblVersion.Text = "Version X.X.X.X";
+            this.lblVersion.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(774, 529);
+            this.Controls.Add(this.lblVersion);
             this.Controls.Add(this.lblArchivoDescontar);
             this.Controls.Add(this.lblArchivoOriginal);
             this.Controls.Add(this.BtnSaveResult);
@@ -99,6 +111,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Restar Archivos de texto lineas repetidas";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -109,6 +122,7 @@
         private System.Windows.Forms.Button BtnSaveResult;
         private System.Windows.Forms.Label lblArchivoOriginal;
         private System.Windows.Forms.Label lblArchivoDescontar;
+        private System.Windows.Forms.Label lblVersion;
     }
 }
 

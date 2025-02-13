@@ -21,6 +21,8 @@ namespace RestarArchivos
         public Form1()
         {
             InitializeComponent();
+            var versiones = typeof(Form1).Assembly.GetName().Version;
+            lblVersion.Text = "Versión " + versiones.ToString();
             lblArchivoOriginal.Text = string.Empty;
             lblArchivoDescontar.Text = string.Empty;
         }
